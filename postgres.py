@@ -167,8 +167,8 @@ print("news")
 news.show(100,False)
 
 result = news.union(forOpen).union(forClose).union(notChanged).union(closed).union(snpClosed)
-
-result.show(10)
+print("RESULT")
+result.show(1000)
 
 # result.repartition(1).write \
 #     .format("csv") \
@@ -185,7 +185,7 @@ result.show(10)
 # shutil.move(csvPath2, csvPath)
 # logger.info("-----Successfully write----")
 
-result.write.mode("overwrite").format("jdbc")\
+result.repartition(1).write.mode("overwrite").format("jdbc")\
     .option("url", "jdbc:postgresql://10.0.55.223:5432/example_db") \
     .option("driver", "org.postgresql.Driver") \
     .option("dbtable", "example_table") \
