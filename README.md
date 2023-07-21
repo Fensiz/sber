@@ -1,7 +1,5 @@
-# sber
-
-example - бинарный файл собранный с помощью pyinstaller для macOS(arm64) из файла example.py
-example.scala - сохранение справочника в csv(изначальный вариант на scala)
-example.py - сохранение справочника в csv
+example - бинарный файл собранный с помощью pyinstaller для macOS(arm64) из файла example.py<br><br>
+example.scala - сохранение справочника в csv(изначальный вариант на scala)<br><br>
+example.py - сохранение справочника в csv<br><br>
 postgres.py - сохранение справочника в postgre, но есть ошибки, по какой-то причине на этапе записи в postgre теряются строки(пока не разобрался), итоговый датафрейм собирается верно
 
